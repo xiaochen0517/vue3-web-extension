@@ -1,1 +1,3 @@
-console.log('background script loaded');
+console.log("background script loaded");
+
+export { };

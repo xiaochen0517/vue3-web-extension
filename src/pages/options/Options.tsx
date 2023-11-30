@@ -1,6 +1,9 @@
-import React from 'react';
-import '@pages/options/Options.css';
+import "@pages/options/Options.css";
+import {defineComponent} from "vue";
 
-export default function Options(): JSX.Element {
-  return <div className="container">Options</div>;
-}
+export default defineComponent({
+  name: "PopupComponent",
+  setup() {
+    return () => (<div class="container">Options</div>);
+  },
+});

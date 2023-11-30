@@ -1,12 +1,12 @@
-import "@pages/panel/Panel.css";
+import "@pages/content/Content.css";
 import {defineComponent} from "vue";
 
 export default defineComponent({
-  name: "PanelComponent",
+  name: "ContentComponent",
   setup() {
     return () => (
-      <div class="container">
-        <h1>Dev Tools Panel</h1>
+      <div>
+        <h1>Content</h1>
       </div>
     );
   }
