@@ -7,8 +7,6 @@
     "allowSyntheticDefaultImports": true
   },
   "include": [
-    "src",
-    "utils",
     "vite.config.ts",
     "./package.json",
     "manifest.json",

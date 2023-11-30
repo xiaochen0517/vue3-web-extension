@@ -1,11 +1,6 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "types": [
-      "vite/client",
-      "node",
-      "chrome"
-    ],
     "useDefineForClassFields": true,
     "module": "ESNext",
     "lib": [
@@ -17,12 +12,12 @@
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
     /* Linting */
     "strict": true,
+    "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
@@ -38,13 +33,16 @@
       "@pages/*": [
         "src/pages/*"
       ]
-    }
+    },
+    "types": [
+      "vite/client",
+      "node",
+      "chrome"
+    ]
   },
   "include": [
     "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue"
+    "src/**/*.tsx"
   ],
   "references": [
     {
