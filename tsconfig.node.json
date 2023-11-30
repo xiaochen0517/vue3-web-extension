@@ -1,8 +1,12 @@
 {
   "compilerOptions": {
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
     "composite": true,
     "skipLibCheck": true,
-    "module": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true
   },
   "include": [
