@@ -3,7 +3,7 @@ import vueJsx from "@vitejs/plugin-vue-jsx";
 import {resolve} from "path";
 import {defineConfig} from "vite";
 import {crx, ManifestV3Export} from "@crxjs/vite-plugin";
-import {stripDevIcons} from "./src/plugins/StripDevIcons";
+import {stripDevIcons} from "./plugins/StripDevIcons";
 
 import manifest from "./manifest.json";
 import devManifest from "./manifest.dev.json";
