@@ -35,13 +35,23 @@ export default defineConfig({
   plugins: [
     vue(),
     vueJsx(),
-    crx({manifest: extensionManifest as ManifestV3Export}),
+    crx({
+      manifest: extensionManifest as ManifestV3Export,
+      contentScripts: {
+        injectCss: true,
+      }
+    }),
     stripDevIcons(isDev),
   ],
   publicDir,
   build: {
     outDir,
     sourcemap: isDev,
-    emptyOutDir: !isDev
+    emptyOutDir: !isDev,
+    rollupOptions: {
+      input: {
+        panel: resolve(pagesDir, "panel/index.html"),
+      }
+    }
   },
 });
