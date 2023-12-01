@@ -1,18 +1,12 @@
 {
   "compilerOptions": {
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
     "composite": true,
     "skipLibCheck": true,
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "resolveJsonModule": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true
   },
   "include": [
-    "vite.config.ts",
-    "./package.json",
-    "manifest.json",
-    "manifest.dev.json"
+    "vite.config.ts"
   ]
 }
