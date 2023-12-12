@@ -1,5 +1,6 @@
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
+import svgLoader from "vite-svg-loader";
 import {resolve} from "path";
 import {defineConfig} from "vite";
 import {crx, ManifestV3Export} from "@crxjs/vite-plugin";
@@ -42,6 +43,7 @@ export default defineConfig({
       }
     }),
     stripDevIcons(isDev),
+    svgLoader(),
   ],
   publicDir,
   build: {

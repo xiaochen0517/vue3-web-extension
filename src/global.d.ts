@@ -4,6 +4,11 @@ declare module "*.json" {
 }
 
 declare module "*.svg" {
-  const content: string;
+  import Vue, { VNode } from 'vue';
+
+  const content: Vue & {
+    // 添加 class 属性
+    class?: string;
+  };
   export default content;
 }
