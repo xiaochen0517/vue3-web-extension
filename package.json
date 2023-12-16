@@ -1,7 +1,7 @@
 {
   "name": "vite-web-extension",
-  "version": "1.1.0",
-  "description": "A simple chrome extension template with Vite, React, TypeScript and Tailwind CSS.",
+  "version": "1.0.0",
+  "description": "A simple chrome extension template with Vite, Vue3, TypeScript and Tailwind CSS.",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -9,18 +9,21 @@
   },
   "scripts": {
     "build": "vite build",
-    "dev": "nodemon"
+    "dev": "rimraf dist && nodemon",
+    "lint": "eslint --ext .ts,.vue src --fix"
   },
   "type": "module",
   "dependencies": {
     "pinia": "^2.1.7",
+    "uuid": "^9.0.1",
     "vue": "^3.3.9",
     "webextension-polyfill": "^0.10.0"
   },
   "devDependencies": {
-    "@crxjs/vite-plugin": "^1.0.14",
+    "@crxjs/vite-plugin": "^2.0.0-beta.21",
     "@types/chrome": "^0.0.180",
     "@types/node": "^17.0.23",
+    "@types/uuid": "^9.0.7",
     "@types/webextension-polyfill": "^0.10.0",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
     "@typescript-eslint/parser": "^6.13.1",
@@ -33,9 +36,10 @@
     "fs-extra": "^11.1.0",
     "nodemon": "^2.0.20",
     "postcss": "^8.4.31",
+    "rimraf": "^5.0.5",
     "tailwindcss": "^3.3.5",
     "ts-node": "^10.9.1",
-    "typescript": "^4.9.4",
+    "typescript": "^5.3.2",
     "vite": "^4.5.0",
     "vite-svg-loader": "^5.1.0",
     "vue-tsc": "^1.8.24"

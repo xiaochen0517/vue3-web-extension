@@ -6,7 +6,7 @@ export default defineComponent({
   setup() {
     return () => (
       <div class="container">
-        <h1>Dev Tools Panel</h1>
+        <h1>Dev Tools Panel use Vue3</h1>
       </div>
     );
   }

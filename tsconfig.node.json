@@ -3,12 +3,11 @@
     "composite": true,
     "skipLibCheck": true,
     "module": "ESNext",
+    "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true
   },
   "include": [
-    "vite.config.ts",
-    "./package.json",
-    "manifest.json",
-    "manifest.dev.json"
+    "plugins/**/*.ts",
+    "vite.config.ts"
   ]
 }
